@@ -1,3 +1,8 @@
-print('hey')
-print('i hope it works')
-print('hm looks like it doesnt')
+from PyQt5 import QtWidgets, uic
+import sys
+
+app = QtWidgets.QApplication([])
+win = uic.loadUi("design.ui")  # расположение вашего файла .ui
+
+win.show()
+sys.exit(app.exec())
